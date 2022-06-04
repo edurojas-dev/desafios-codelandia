@@ -18,7 +18,7 @@ function renderCard(dataPost, titlePost, descPost) {
       <div class="card-header">
         <span class="dataPostagem">${dataPost}</span>
         <span>
-          <img src="assets/Vector.png" alt="">
+          <img src="assets/Vector.png" alt="like">
         </span>
       </div>
       <div class="card-body">
@@ -50,7 +50,7 @@ const listPost = [
     titlePost: "Tim Berners-Lee vai leiloar código-fonte da web",
     descPost: 
     `
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus
+      Nam vitae finibus
       ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum
       nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et,
       interdum ullamcorper libero.
@@ -63,9 +63,18 @@ const listPost = [
     descPost: 
     `
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus
-      ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum
-      nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et,
+      ante. Duis lobortis tellus vel diammet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et,
       interdum ullamcorper libero.
+    `,
+  },
+
+  {
+    dataPost: "03 de jun, 2022",
+    titlePost: "Novos lançamentos de filmes da Marvel",
+    descPost: 
+    `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus
+      ante. Duis lobortis tellus vel diam
     `,
   },
 ];
