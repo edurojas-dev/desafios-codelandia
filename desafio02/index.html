@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 02 | Codelândia</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500&family=Roboto:wght@300&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      background-color: #F9F9F9;
+      ;
+    }
+
+    .navbar {
+      background-color: #181818;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      /* height: 30px; */
+    }
+
+    .subBar {
+      padding: 15px;
+      text-align: center;
+      color: #181818;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 47px;
+      letter-spacing: 0em;
+    }
+
+    section {
+      background-image: url("img/bg1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 450px;
+    }
+
+    .transbox {
+      position: relative;
+      background: #181818;
+      opacity: 0.7;
+      height: 100%;
+      width: 100%;
+      z-index: 9999;
+      color: white;
+    }
+
+    .content {
+      padding: 5% 10%;
+    }
+
+    p {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 196.19%;
+      color: #F9F9F9;
+    }
+
+    .desc {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 196.19%;
+      color: #474747;
+      text-align: center !important;
+      padding: 0 15px;
+      margin-bottom: 40px;
+    }
+
+    .tenis {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 35vh;
+      margin-bottom: 55px;
+    }
+
+    .tenis div {
+      /* border: 2px solid; */
+      width: 300px;
+      height: 302px;
+      background: #EBE9EA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px;
+      border-radius: 5px;
+      transition: 0.5s;
+    }
+
+    .tenis div:hover {
+      box-shadow: 5px 5px 15px #474747;
+      cursor: pointer;
+      width: 310px;
+      height: 312px;
+    }
+
+    .tenis div img {
+      width: 70%;
+    }
+
+    @media(max-width: 800px) {
+      section {
+        height: 270px;
+      }
+
+      p,
+      h1 {
+        text-align: center;
+      }
+
+      br {
+        display: none;
+      }
+
+      .tenis {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar">Ganhe R$ 10,00 de desconto no frete</nav>
+    <div class="subBar">JordanShoes</div>
+
+    <section>
+      <div class="transbox">
+        <div class="content">
+          <h1>A melhor loja de Jordan</h1>
+          <p style="margin-top: 55px">
+            O tênis Jordan é fruto de uma velha e forte parceria <br> entre a Nike e o jogador Michael Jordan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="subBar">Destaques</div>
+    <p class="desc">
+      Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.
+    </p>
+
+    <div class="tenis">
+      <div>
+        <img src="img/tenis5.png" alt="tenis">
+      </div>
+
+      <div>
+        <img src="img/tenis.png" alt="tenis">
+      </div>
+
+      <div>
+        <img src="img/tenis4.png" alt="tenis">
+      </div>
+
+      <div>
+        <img src="img/tenis.png" alt="tenis">
+      </div>
+    </div>
+
+    <div class="tenis">
+      <div>
+        <img src="img/tenis.png" alt="tenis">
+      </div>
+
+      <div>
+        <img src="img/tenis1.png" alt="tenis">
+      </div>
+
+      <div>
+        <img src="img/tenis2.png" alt="tenis">
+      </div>
+
+      <div>
+        <img src="img/tenis3.png" alt="tenis">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
