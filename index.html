@@ -28,31 +28,7 @@
       <small>Desafios Codelândia</small>
     </h1>
 
-    <!-- Project Two -->
-    <div class="row mb-5">
-      <div class="col-md-7" style="margin: auto;">
-        <a href="desafio01/index.html" class="linkSite">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="img/desafio01-capa.png" alt="desafio 2">
-        </a>
-        <h3 class="tituloProjeto mt-3">Tela de postagens - Blog</h3>
-        <p class="descricao">Desafio proposto de criar uma página web de blog, feito com HTML, CSS e JS.</p>
-        <a class="btn btn-dark buttonSite" href="desafio01/index.html">Ver projeto</a>
-      </div>
-    </div>
-    <hr>
-
-    <!-- Project Two -->
-    <div class="row mb-5">
-      <div class="col-md-7" style="margin: auto;">
-        <a href="desafio02/index.html" class="linkSite">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="img/desafio02-capa.png" alt="desafio 2">
-        </a>
-        <h3 class="tituloProjeto mt-3">Página de Loja</h3>
-        <p class="descricao">Página web de loja virtual de tenis, feito com HTML e CSS</p>
-        <a class="btn btn-dark buttonSite" href="desafio02/index.html">Ver projeto</a>
-      </div>
-    </div>
-    <hr>
+    <div id="app"></div>
 
 
 
@@ -68,6 +44,45 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
+
+    <script>
+      const app = document.getElementById('app')
+      const cardTemplate = (titulo, imagem, desc, link) => {
+        return `<div class="row mb-5">
+          <div class="col-md-7" style="margin: auto;">
+            <a href="${link}" class="linkSite">
+              <img class="img-fluid rounded mb-3 mb-md-0" src="${imagem}" alt="desafio 2">
+            </a>
+            <h3 class="tituloProjeto mt-3">${titulo}</h3>
+            <p class="descricao">${desc}</p>
+            <a class="btn btn-dark buttonSite" href="${link}">Ver projeto</a>
+          </div>
+        </div>
+        <hr>`
+      }
+
+      const desafios = [
+        {
+          title: 'Tela de postagens - Blog',
+          imagem: 'img/desafio01-capa.png',
+          desc: 'Desafio proposto de criar uma página web de blog, feito com HTML, CSS e JS.',
+          link: 'desafio01/index.html'
+        },
+
+        {
+          title: 'Página de Loja',
+          imagem: 'img/desafio02-capa.png',
+          desc: 'Página web de loja virtual de tenis, feito com HTML e CSS',
+          link: 'desafio02/index.html'
+        }
+      ]
+
+      app.innerHTML = desafios.map((item) => {
+        return cardTemplate(item.title, item.imagem, item.desc, item.link)
+      }).join("")
+
+    </script>
+
 </body>
 
 </html>
